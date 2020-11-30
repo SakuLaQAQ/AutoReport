@@ -35,18 +35,18 @@ jobs:
         env:
           student_id: ${{ secrets.STUDENT_ID }}
           student_id_pwd: ${{ secrets.STUDENT_ID_PWD }}
-          id2: ${{ secrets.ID2 }}
-          id2_pwd: ${{ secrets.ID2_PWD }}
-          id3: ${{ secrets.ID3 }}
-          id3_pwd: ${{ secrets.ID3_PWD }}
-          id4: ${{ secrets.ID4 }}
-          id4_pwd: ${{ secrets.ID4_PWD }}
-          id5: ${{ secrets.ID5 }}
-          id5_pwd: ${{ secrets.ID5_PWD }}
+#           id2: ${{ secrets.ID2 }}
+#           id2_pwd: ${{ secrets.ID2_PWD }}
+#           id3: ${{ secrets.ID3 }}
+#           id3_pwd: ${{ secrets.ID3_PWD }}
+#           id4: ${{ secrets.ID4 }}
+#           id4_pwd: ${{ secrets.ID4_PWD }}
+#           id5: ${{ secrets.ID5 }}
+#           id5_pwd: ${{ secrets.ID5_PWD }}
         run: |
           python main.py $student_id $student_id_pwd 36.7
-          python main.py $id2 $id2_pwd 36.7
-          python main.py $id3 $id3_pwd 36.7
-          python main.py $id4 $id4_pwd 36.7
-          python main.py $id5 $id5_pwd 36.7
+ #         python main.py $id2 $id2_pwd 36.7
+  #        python main.py $id3 $id3_pwd 36.7
+   #       python main.py $id4 $id4_pwd 36.7
+    #      python main.py $id5 $id5_pwd 36.7
 
