@@ -35,10 +35,10 @@ jobs:
         env:
           student_id: ${{ secrets.STUDENT_ID }}
           student_id_pwd: ${{ secrets.STUDENT_ID_PWD }}
-#           id2: ${{ secrets.ID2 }}
-#           id2_pwd: ${{ secrets.ID2_PWD }}
-#           id3: ${{ secrets.ID3 }}
-#           id3_pwd: ${{ secrets.ID3_PWD }}
+          id2: ${{ secrets.ID2 }}
+          id2_pwd: ${{ secrets.ID2_PWD }}
+          id3: ${{ secrets.ID3 }}
+          id3_pwd: ${{ secrets.ID3_PWD }}
 #           id4: ${{ secrets.ID4 }}
 #           id4_pwd: ${{ secrets.ID4_PWD }}
 #           id5: ${{ secrets.ID5 }}
