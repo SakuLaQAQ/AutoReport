@@ -46,7 +46,7 @@ jobs:
         run: |
           python main.py $student_id $student_id_pwd 36.7
           python main.py $id2 $id2_pwd 36.8
-  #        python main.py $id3 $id3_pwd 36.7
+          python main.py $id3 $id3_pwd 36.7
    #       python main.py $id4 $id4_pwd 36.7
     #      python main.py $id5 $id5_pwd 36.7
 
