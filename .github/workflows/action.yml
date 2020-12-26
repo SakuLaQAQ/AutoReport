@@ -2,7 +2,7 @@ name: Execute check-in based on Github Actions
 
 on:
   schedule:
-    # execute every 8am(UTC+8) and 9pm(UTC+8)
+    # execute every 8am(UTC+8) and 8pm(UTC+8)
     - cron: '1 0,12 * * *'
 #   workflow_dispatch
 
@@ -21,7 +21,7 @@ jobs:
 #           student_id: ${{ secrets.STUDENT_ID }}
 #           student_id_pwd: ${{ secrets.STUDENT_ID_PWD }}
 #         run: python main.py $student_id $student_id_pwd 36.2
-        
+#        
   selenium:
     runs-on: ubuntu-latest
     container: autorip/python-slim:AutoReport-selenium
@@ -39,14 +39,13 @@ jobs:
           id2_pwd: ${{ secrets.ID2_PWD }}
           id3: ${{ secrets.ID3 }}
           id3_pwd: ${{ secrets.ID3_PWD }}
-#           id4: ${{ secrets.ID4 }}
-#           id4_pwd: ${{ secrets.ID4_PWD }}
-#           id5: ${{ secrets.ID5 }}
-#           id5_pwd: ${{ secrets.ID5_PWD }}
+          id4: ${{ secrets.ID4 }}
+          id4_pwd: ${{ secrets.ID4_PWD }}
+          id5: ${{ secrets.ID5 }}
+          id5_pwd: ${{ secrets.ID5_PWD }}
         run: |
           python main.py $student_id $student_id_pwd 36.7
-          python main.py $id2 $id2_pwd 36.8
+          python main.py $id2 $id2_pwd 36.7
           python main.py $id3 $id3_pwd 36.7
-   #       python main.py $id4 $id4_pwd 36.7
-    #      python main.py $id5 $id5_pwd 36.7
-
+          python main.py $id4 $id4_pwd 36.7
+          python main.py $id5 $id5_pwd 36.7
